@@ -21,7 +21,7 @@ const App = () => {
     const heightInMeters = height / 100;
     const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2);
 
-    const prompt = `Seseorang dengan tinggi ${height} cm dan berat ${weight} kg. Berikan advice kesehatan casual. (maksimal 200 kata)`;
+    const prompt = `Seseorang dengan tinggi ${height} cm dan berat ${weight} kg. Berikan advice kesehatan casual. (maksimal 150 kata)`;
 
     try {
       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
